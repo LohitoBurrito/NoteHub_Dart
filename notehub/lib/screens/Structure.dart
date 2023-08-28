@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fluentui_icons/fluentui_icons.dart';
 
 class Structure extends StatefulWidget {
   const Structure({super.key});
@@ -42,11 +43,26 @@ class _StructureState extends State<Structure> {
         unselectedItemColor: const Color(0xFF526480),
         type: BottomNavigationBarType.fixed,
         items: const [
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-          BottomNavigationBarItem(icon: Icon(Icons.search), label: "View_Note"),
-          BottomNavigationBarItem(icon: Icon(Icons.add), label: "Create_Note"),
-          BottomNavigationBarItem(icon: Icon(Icons.update), label: "Your_Note"),
-          BottomNavigationBarItem(icon: Icon(Icons.person), label: "Profile")
+          BottomNavigationBarItem(
+            icon: Icon(FluentSystemIcons.ic_fluent_home_regular),
+            activeIcon: Icon(FluentSystemIcons.ic_fluent_home_filled),
+            label: "Home"
+          ),
+          BottomNavigationBarItem(
+              icon: Icon(FluentSystemIcons.ic_fluent_search_regular),
+              activeIcon: Icon(FluentSystemIcons.ic_fluent_search_filled),
+              label: "View_Note"
+          ),
+          BottomNavigationBarItem(
+              icon: Icon(FluentSystemIcons.ic_fluent_add_regular),
+              activeIcon: Icon(FluentSystemIcons.ic_fluent_add_filled),
+              label: "Create_Note"
+          ),
+          BottomNavigationBarItem(
+              icon: Icon(FluentSystemIcons.ic_fluent_person_regular),
+              activeIcon: Icon(FluentSystemIcons.ic_fluent_person_filled),
+              label: "Profile"
+          )
         ],
       ),
       
