@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fluentui_icons/fluentui_icons.dart';
+import 'package:notehub/screens/Homepage.dart';
 
 class Structure extends StatefulWidget {
   const Structure({super.key});
@@ -13,7 +14,7 @@ class _StructureState extends State<Structure> {
   int _selectedIndex = 0;
 
   static final List<Widget>_widgetOptions = <Widget>[
-    const Text("Home"),
+    const HomeScreen(),
     const Text("View_Note"),
     const Text("Create_Note"),
     const Text("Your_Note"),
